@@ -20,5 +20,8 @@
     "node": ">=12.x. <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
 }
