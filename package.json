@@ -1,27 +1,37 @@
 {
-  "name": "strapi-plugin-payment",
-  "version": "0.0.0",
+  "name": "@sawala-tech/strapi-plugin-payment",
+  "version": "0.0.1",
   "description": "Payment integration with Indonesia's payment gateway providers.",
   "strapi": {
-    "name": "Payment",
+    "name": "payment",
     "description": "Payment integration with Indonesia's payment gateway providers",
     "kind": "plugin"
   },
   "dependencies": {},
-  "author": {
-    "name": "SAWALA"
-  },
+  "author": "SAWALA",
   "maintainers": [
-    {
-      "name": "SAWALA"
-    }
+    "SAWALA"
   ],
   "engines": {
     "node": ">=12.x. <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT",
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawala-tech/strapi-plugin-payment.git"
+  },
+  "keywords": [
+    "strapi",
+    "plugin",
+    "sawala",
+    "sawala-tech"
+  ],
+  "bugs": {
+    "url": "https://github.com/sawala-tech/strapi-plugin-payment/issues"
+  },
+  "homepage": "https://github.com/sawala-tech/strapi-plugin-payment#readme"
 }
