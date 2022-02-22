@@ -3,7 +3,7 @@ module.exports = {
         tableName: 'payment-code',
         singularName: 'payment-code', // kebab-case mandatory
         pluralName: 'payment-codes', // kebab-case mandatory
-        displayName: 'Payment codes',
+        displayName: 'Payment code',
         description: 'Store payment codes from gateway provider',
         kind: 'collectionType',
     },

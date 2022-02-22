@@ -39,8 +39,7 @@ module.exports = {
         invoice: {
             type: "relation",
             relation: "manyToOne",
-            target: "plugin::payment.invoice",
-            inversedBy: "payment_callbacks"
+            target: "plugin::payment.invoice"
         },
         raw_data: {
             type: "json"

@@ -1,9 +1,9 @@
 module.exports = {
     info: {
-        tableName: 'payement-channel',
-        singularName: 'payement-channel', // kebab-case mandatory
-        pluralName: 'payement-channels', // kebab-case mandatory
-        displayName: 'Payment Channel',
+        tableName: 'payment-channel',
+        singularName: 'payment-channel', // kebab-case mandatory
+        pluralName: 'payment-channels', // kebab-case mandatory
+        displayName: 'Payment channel',
         description: 'List of payment channel',
         kind: 'collectionType',
     },
