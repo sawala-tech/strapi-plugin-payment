@@ -46,7 +46,7 @@ module.exports = {
     invoice: {
       type: "relation",
       relation: "manyToMany",
-      target: "plugin::sawala-payment.payment-invoice",
+      target: "plugin::payment.payment-invoice",
       inversedBy: "invoice_items"
     },
     user: {
