@@ -46,7 +46,7 @@ module.exports = {
     invoice: {
       type: "relation",
       relation: "manyToMany",
-      target: "plugin::payment.payment-invoice",
+      target: "plugin::payment.invoice",
       inversedBy: "invoice_items"
     },
     user: {

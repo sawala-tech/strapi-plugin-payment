@@ -1,8 +1,8 @@
 module.exports = {
   info: {
-    tableName: 'payment-invoice',
-    singularName: 'payment-invoice', // kebab-case mandatory
-    pluralName: 'payment-invoices', // kebab-case mandatory
+    tableName: 'invoice',
+    singularName: 'invoice', // kebab-case mandatory
+    pluralName: 'invoices', // kebab-case mandatory
     displayName: 'Invoice',
     description: 'Store invoice transaction',
     kind: 'collectionType',
@@ -56,6 +56,22 @@ module.exports = {
     customer_address: {
       type: 'string',
       required: false
+    },
+    status: {
+      type: "enumeration",
+      enum: [
+        "unpaid",
+        "paid",
+        "expired",
+        "canceled"
+      ]
+    },
+    payment_codes: {
+      type: "relation",
+      relation: "oneToMany",
+      target: "plugin::payment.payment-code",
+      mappedBy: "invoice",
+      configurable: false,
     },
     user: {
       type: "relation",
