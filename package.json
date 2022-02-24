@@ -1,6 +1,6 @@
 {
   "name": "@sawala-tech/strapi-plugin-payment",
-  "version": "0.0.0-semantic-release",
+  "version": "0.1.1-beta.1",
   "description": "Payment integration with Indonesia's payment gateway providers.",
   "strapi": {
     "name": "payment",
