@@ -17,9 +17,7 @@ jobs:
       with:
         node-version: 14.x
     - name: Install dependencies
-      run: npx ci
-    - name: Install semantic-release extra plugins
-      run: yarn add -D @semantic-release/changelog @semantic-release/git           
+      run: npx ci      
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
