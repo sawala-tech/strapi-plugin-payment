@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: 14.x
     - name: Install dependencies
-      run: npx ci      
+      run: yarn install --ignore-scripts
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

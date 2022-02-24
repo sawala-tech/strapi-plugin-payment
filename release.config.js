@@ -16,12 +16,13 @@ module.exports = {
       },
     ],
     '@semantic-release/npm',
+    '@semantic-release/github',
     [
-      '@semantic-release/github',
+      '@semantic-release/git',
       {
-        assets: ['dist/**/*.{js,css}', 'docs'],
+        assets: ['dist/**/*.{js,css}', 'docs', 'CHANGELOG.md', 'package.json'],
         message:
-          'chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+          'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
   ],
