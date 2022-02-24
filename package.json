@@ -1,6 +1,6 @@
 {
   "name": "@sawala-tech/strapi-plugin-payment",
-  "version": "0.0.3",
+  "version": "0.0.0-semantic-release",
   "description": "Payment integration with Indonesia's payment gateway providers.",
   "strapi": {
     "name": "payment",
@@ -18,6 +18,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,5 +34,10 @@
   "bugs": {
     "url": "https://github.com/sawala-tech/strapi-plugin-payment/issues"
   },
-  "homepage": "https://github.com/sawala-tech/strapi-plugin-payment#readme"
+  "homepage": "https://github.com/sawala-tech/strapi-plugin-payment#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  }
 }
